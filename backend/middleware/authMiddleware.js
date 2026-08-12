@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken';
 import User from '../models/User.js';
 
-const JWT_SECRET = process.env.JWT_SECRET || 'yan_fashion_super_secret_jwt_key_2026';
+const JWT_SECRET = process.env.JWT_SECRET || 'dj_fashion_super_secret_jwt_key_2026';
 
 export const protect = async (req, res, next) => {
   let token;
