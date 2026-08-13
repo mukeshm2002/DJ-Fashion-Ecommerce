@@ -12,4 +12,13 @@ export default defineConfig({
       },
     },
   },
+  preview: {
+    host: '0.0.0.0',
+    port: Number(process.env.PORT) || 4173,
+    allowedHosts: [
+      'name-dj-fashion-frontend.onrender.com',
+      'dj-fashion-frontend.onrender.com',
+      '.onrender.com'
+    ]
+  }
 });
